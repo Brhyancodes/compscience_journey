@@ -1,0 +1,13 @@
+# Maven
+target/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Local application data
+weather_history.csv
+
+# Local secrets
+.env
