@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Stories - Destinations &amp; Attractions</title>
+    <style>
+        /* Smooth scrolling for jump-to-section anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            background-color: #f9fafb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Table styling: colorful borders, clean collapse, and balanced width */
+        .destinations-table {
+            width: 80%;
+            max-width: 750px;
+            border-collapse: collapse;
+            margin: 25px 0 45px 0;
+            border: 3px solid #2563eb;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Bold headers with vibrant background and sufficient cell padding */
+        .destinations-table th {
+            background-color: #1d4ed8;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.15rem;
+            padding: 16px;
+            border: 2px solid #2563eb;
+            text-align: center;
+        }
+
+        /* Table data cells with colorful borders and generous padding for readability */
+        .destinations-table td {
+            padding: 16px;
+            border: 2px solid #60a5fa;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+
+        /* Alternating row colors for visual distinction and easy reading */
+        .destinations-table tbody tr:nth-child(odd) {
+            background-color: #eff6ff;
+        }
+
+        .destinations-table tbody tr:nth-child(even) {
+            background-color: #dbeafe;
+        }
+
+        /* Photo gallery image styling with smooth opacity hover transition */
+        .attraction-img {
+            width: 200px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #1d4ed8;
+            opacity: 1;
+            transition: opacity 0.35s ease, transform 0.35s ease;
+        }
+
+        /* Smooth hover effect changing opacity as required by rubric */
+        .attraction-img:hover {
+            opacity: 0.65;
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+
+        /* Detailed destination information cards at the bottom of the page */
+        .story-details {
+            margin-top: 50px;
+            border-top: 2px solid #cbd5e1;
+            padding-top: 25px;
+        }
+
+        .story-card {
+            background-color: #ffffff;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .story-card h3 {
+            margin-top: 0;
+            color: #1e40af;
+        }
+
+        .back-to-top {
+            font-size: 0.9rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header>
+        <a href="index.html" class="nav-link">&larr; Back to Homepage</a>
+        <h1>Travel Destinations</h1>
+        <p>Click on any attraction image below to jump directly to its detailed travel story at the bottom of the page.
+        </p>
+    </header>
+
+    <main>
+        <!-- Travel Destinations Table with 3 Destinations and Clickable Attraction Images -->
+        <table class="destinations-table">
+            <thead>
+                <tr>
+                    <th>Destination</th>
+                    <th>Attraction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paris</td>
+                    <td>
+                        <!-- Clicking image jumps to #paris-info section below -->
+                        <a href="#paris-info">
+                            <img src="/images/eifell.jpg" alt="Eiffel Tower in Paris" class="attraction-img">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rome</td>
+                    <td>
+                        <!-- Clicking image jumps to #rome-info section below -->
+                        <a href="#rome-info">
+                            <img src="/images/colloseum.jpg" alt="Colosseum in Rome" class="attraction-img">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>New York</td>
+                    <td>
+                        <!-- Clicking image jumps to #newyork-info section below -->
+                        <a href="#newyork-info">
+                            <img src="/images/liberty.jpg" alt="Statue of Liberty in New York" class="attraction-img">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Detailed Related Information Sections at Bottom of Page -->
+        <section class="story-details">
+            <h2>Destination Stories &amp; Attraction Guides</h2>
+
+            <article id="paris-info" class="story-card">
+                <h3>Paris &ndash; The Eiffel Tower</h3>
+                <p>Constructed for the 1889 World's Fair, the Eiffel Tower stands 330 meters tall on the Champ de Mars.
+                    Visitors can ascend three levels for panoramic views of the Seine River and Paris's historic
+                    boulevards.</p>
+                <a href="#top" class="back-to-top">&uarr; Back to Table</a>
+            </article>
+
+            <article id="rome-info" class="story-card">
+                <h3>Rome &ndash; The Colosseum</h3>
+                <p>Completed in 80 AD, the Flavian Amphitheatre—known globally as the Colosseum—is the largest ancient
+                    amphitheater ever built. It remains an iconic symbol of Imperial Rome's architectural and
+                    engineering mastery.</p>
+                <a href="#top" class="back-to-top">&uarr; Back to Table</a>
+            </article>
+
+            <article id="newyork-info" class="story-card">
+                <h3>New York &ndash; The Statue of Liberty</h3>
+                <p>Gifted by France to the United States in 1886, Liberty Enlightening the World stands on Liberty
+                    Island in New York Harbor, welcoming travelers and symbolizing freedom and democracy.</p>
+                <a href="#top" class="back-to-top">&uarr; Back to Table</a>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
